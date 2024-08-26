@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Test</title>
+</head>
+<body>
+    <!-- Start of Math Test -->
+
+    <h1>Math Test</h1>
+
+    <form action="submit_test.php" method="post">
+
+        <!-- Text Field for User's Name -->
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Multiple Choice Questions -->
+        <fieldset>
+            <legend>1. What is 7 + 5?</legend>
+            <input type="radio" id="q1a" name="q1" value="11">
+            <label for="q1a">11</label><br>
+            <input type="radio" id="q1b" name="q1" value="12">
+            <label for="q1b">12</label><br>
+            <input type="radio" id="q1c" name="q1" value="13">
+            <label for="q1c">13</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>2. What is the square root of 16?</legend>
+            <input type="radio" id="q2a" name="q2" value="2">
+            <label for="q2a">2</label><br>
+            <input type="radio" id="q2b" name="q2" value="4">
+            <label for="q2b">4</label><br>
+            <input type="radio" id="q2c" name="q2" value="8">
+            <label for="q2c">8</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>3. What is 15 ÷ 3?</legend>
+            <input type="radio" id="q3a" name="q3" value="3">
+            <label for="q3a">3</label><br>
+            <input type="radio" id="q3b" name="q3" value="5">
+            <label for="q3b">5</label><br>
+            <input type="radio" id="q3c" name="q3" value="7">
+            <label for="q3c">7</label>
+        </fieldset>
+        <br>
+
+        <!-- Word Problem -->
+        <fieldset>
+            <legend>4. Word Problem: If you have 3 apples and you buy 4 more, how many apples do you have in total?</legend>
+            <textarea id="word_problem" name="word_problem" rows="4" cols="50" required></textarea>
+        </fieldset>
+        <br>
+
+        <!-- Math Symbols -->
+        <p>Math Symbols:</p>
+        <ul>
+            <li>&amp;#43; (Addition)</li>
+            <li>&amp;#8722; (Subtraction)</li>
+            <li>&amp;#215; (Multiplication)</li>
+        </ul>
+        <br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+    <!-- End of Math Test -->
+</body>
+</html>
