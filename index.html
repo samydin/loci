@@ -3,69 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartwatch Comparison</title>
+    <title>Color Scheme Table</title>
     <style>
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        table, th, td {
-            border: 1px solid black;
-        }
         th, td {
-            padding: 8px;
+            padding: 10px;
             text-align: center;
+            border: 1px solid #ddd;
         }
         th {
-            background-color: #f2f2f2;
+            font-style: italic;
+            font-weight: bold;
+            background-color: #f4f4f4;
         }
-        caption {
-            font-size: 1.5em;
-            margin: 10px 0;
+        .color-name {
+            font-weight: bold;
+        }
+        .color-skyblue {
+            background-color: #87CEEB;
+        }
+        .color-lemonyellow {
+            background-color: #FFF700;
+        }
+        .color-salmonpink {
+            background-color: #FA8072;
+        }
+        .color-forestgreen {
+            background-color: #228B22;
         }
     </style>
 </head>
 <body>
     <table>
-        <caption>Comparison of Smartwatches</caption>
         <thead>
             <tr>
-                <th rowspan="2">Smartwatch</th>
-                <th colspan="2">Features</th>
-                <th rowspan="2">Price</th>
-            </tr>
-            <tr>
-                <th>Battery Life</th>
-                <th>Water Resistance</th>
+                <th colspan="4">Color Scheme: Vibrant Palette</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Smartwatch A</td>
-                <td>2 days</td>
-                <td>Waterproof (50m)</td>
-                <td>$200</td>
+                <td class="color-skyblue color-name">Sky Blue</td>
+                <td>#87CEEB</td>
+                <td>rgb(135, 206, 235)</td>
+                <td>hsl(197, 71%, 73%)</td>
             </tr>
             <tr>
-                <td>Smartwatch B</td>
-                <td>1.5 days</td>
-                <td>Water Resistant (30m)</td>
-                <td>$150</td>
+                <td class="color-lemonyellow color-name">Lemon Yellow</td>
+                <td>#FFF700</td>
+                <td>rgb(255, 247, 0)</td>
+                <td>hsl(57, 100%, 50%)</td>
             </tr>
             <tr>
-                <td>Smartwatch C</td>
-                <td>3 days</td>
-                <td>Waterproof (100m)</td>
-                <td>$250</td>
+                <td class="color-salmonpink color-name">Salmon Pink</td>
+                <td>#FA8072</td>
+                <td>rgb(250, 128, 114)</td>
+                <td>hsl(6, 93%, 71%)</td>
+            </tr>
+            <tr>
+                <td class="color-forestgreen color-name">Forest Green</td>
+                <td>#228B22</td>
+                <td>rgb(34, 139, 34)</td>
+                <td>hsl(120, 61%, 34%)</td>
             </tr>
         </tbody>
     </table>
-
-    <h2>Conclusions</h2>
-    <ol>
-        <li>Smartwatch C offers the longest battery life and the highest water resistance but is the most expensive.</li>
-        <li>Smartwatch A is a mid-range option with decent battery life and water resistance at a moderate price.</li>
-        <li>Smartwatch B is the least expensive but has the shortest battery life and lower water resistance compared to the others.</li>
-    </ol>
 </body>
 </html>
