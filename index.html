@@ -3,72 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Scheme Table</title>
+    <title>Menus</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Background color for better visibility */
         }
-        th, td {
-            padding: 10px;
+
+        .menu {
+            width: 400px;
+            height: 550px;
+            padding: 20px;
+            margin: 20px;
+            border: 3px solid #333; /* Thicker border for better visibility */
+            color: #fff; /* Text color */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for better effect */
+            border-radius: 10px; /* Rounded corners for a modern look */
+        }
+
+        .breakfast {
+            background-image: url('breakfast-bg.jpg'); /* Replace with the actual image */
+        }
+
+        .lunch {
+            background-image: url('lunch-bg.jpg'); /* Replace with the actual image */
+        }
+
+        .dinner {
+            background-image: url('dinner-bg.jpg'); /* Replace with the actual image */
+        }
+
+        h2 {
             text-align: center;
-            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ffcc00; /* Bright color for header text */
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
         }
-        th {
-            font-style: italic;
-            font-weight: bold;
-            background-color: #f4f4f4;
+
+        ul {
+            list-style-type: none;
+            padding: 0;
         }
-        .color-name {
-            font-weight: bold;
-        }
-        .color-skyblue {
-            background-color: #87CEEB;
-        }
-        .color-lemonyellow {
-            background-color: #FFF700;
-        }
-        .color-salmonpink {
-            background-color: #FA8072;
-        }
-        .color-forestgreen {
-            background-color: #228B22;
+
+        ul li {
+            margin-bottom: 15px; /* More space between list items */
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th colspan="4">Color Scheme: Vibrant Palette</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="color-skyblue color-name">Sky Blue</td>
-                <td>#87CEEB</td>
-                <td>rgb(135, 206, 235)</td>
-                <td>hsl(197, 71%, 73%)</td>
-            </tr>
-            <tr>
-                <td class="color-lemonyellow color-name">Lemon Yellow</td>
-                <td>#FFF700</td>
-                <td>rgb(255, 247, 0)</td>
-                <td>hsl(57, 100%, 50%)</td>
-            </tr>
-            <tr>
-                <td class="color-salmonpink color-name">Salmon Pink</td>
-                <td>#FA8072</td>
-                <td>rgb(250, 128, 114)</td>
-                <td>hsl(6, 93%, 71%)</td>
-            </tr>
-            <tr>
-                <td class="color-forestgreen color-name">Forest Green</td>
-                <td>#228B22</td>
-                <td>rgb(34, 139, 34)</td>
-                <td>hsl(120, 61%, 34%)</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="menu breakfast">
+        <h2>Breakfast Menu</h2>
+        <ul>
+            <li>Eggs Benedict</li>
+            <li>Pancakes</li>
+            <li>Fruit Smoothie</li>
+            <li>Coffee</li>
+        </ul>
+    </div>
+    <div class="menu lunch">
+        <h2>Lunch Menu</h2>
+        <ul>
+            <li>Grilled Cheese Sandwich</li>
+            <li>Caesar Salad</li>
+            <li>Tomato Soup</li>
+            <li>Iced Tea</li>
+        </ul>
+    </div>
+    <div class="menu dinner">
+        <h2>Dinner Menu</h2>
+        <ul>
+            <li>Steak</li>
+            <li>Mashed Potatoes</li>
+            <li>Steamed Vegetables</li>
+            <li>Red Wine</li>
+        </ul>
+    </div>
 </body>
 </html>
