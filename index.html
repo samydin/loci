@@ -3,90 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menus</title>
+    <title>My Daily Schedule</title>
     <style>
-        body {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+        /* Style for the whole table */
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Background color for better visibility */
+            background-color: #f9f9f9;
+            border: 2px solid #333;
         }
 
-        .menu {
-            width: 400px;
-            height: 550px;
-            padding: 20px;
-            margin: 20px;
-            border: 3px solid #333; /* Thicker border for better visibility */
-            color: #fff; /* Text color */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for better effect */
-            border-radius: 10px; /* Rounded corners for a modern look */
-        }
-
-        .breakfast {
-            background-image: url('breakfast-bg.jpg'); /* Replace with the actual image */
-        }
-
-        .lunch {
-            background-image: url('lunch-bg.jpg'); /* Replace with the actual image */
-        }
-
-        .dinner {
-            background-image: url('dinner-bg.jpg'); /* Replace with the actual image */
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #ffcc00; /* Bright color for header text */
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 15px; /* More space between list items */
+        /* Style for the table header */
+        th {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
             font-size: 18px;
+        }
+
+        /* Style for table rows and cells */
+        td {
+            padding: 15px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        /* Style for a specific row (optional) */
+        tr:nth-child(2) {
+            background-color: #e0f7fa;
+        }
+
+        /* Style for specific columns */
+        td:first-child {
+            font-weight: bold;
+            background-color: #e1bee7;
         }
     </style>
 </head>
 <body>
-    <div class="menu breakfast">
-        <h2>Breakfast Menu</h2>
-        <ul>
-            <li>Eggs Benedict</li>
-            <li>Pancakes</li>
-            <li>Fruit Smoothie</li>
-            <li>Coffee</li>
-        </ul>
-    </div>
-    <div class="menu lunch">
-        <h2>Lunch Menu</h2>
-        <ul>
-            <li>Grilled Cheese Sandwich</li>
-            <li>Caesar Salad</li>
-            <li>Tomato Soup</li>
-            <li>Iced Tea</li>
-        </ul>
-    </div>
-    <div class="menu dinner">
-        <h2>Dinner Menu</h2>
-        <ul>
-            <li>Steak</li>
-            <li>Mashed Potatoes</li>
-            <li>Steamed Vegetables</li>
-            <li>Red Wine</li>
-        </ul>
-    </div>
+
+    <h1 style="text-align: center;">My daily routine</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7:00 AM</td>
+                <td>Wake Up</td>
+            </tr>
+            <tr>
+                <td>7:30 AM</td>
+                <td>Breakfast - bread with egg</td>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td>Morning Exercise - school(Online)</td>
+            </tr>
+            <tr>
+                <td>9:00 AM</td>
+                <td>break or live call with teacher</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Work on Project - HTML and CSS Practice</td>
+            </tr>
+            <tr>
+                <td>1:00 PM</td>
+                <td>Lunch - there is always something different</td>
+            </tr>
+            <tr>
+                <td>3:00 PM</td>
+                <td>Review Code Documentation</td>
+            </tr>
+            <tr>
+                <td>6:00 PM</td>
+                <td>Dinner - Pasta</td>
+            </tr>
+            <tr>
+                <td>8:00 PM</td>
+                <td>Watch a Movie</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
