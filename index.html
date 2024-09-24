@@ -3,96 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Daily Schedule</title>
+    <title>Our Awesome Team</title>
     <style>
-        /* Style for the whole table */
-        table {
-            width: 60%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            border: 2px solid #333;
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
         }
 
-        /* Style for the table header */
-        th {
-            background-color: #333;
+        header {
+            background-color: #4CAF50;
             color: white;
-            padding: 10px;
-            border: 1px solid #ccc;
-            font-size: 18px;
-        }
-
-        /* Style for table rows and cells */
-        td {
-            padding: 15px;
-            border: 1px solid #ccc;
+            padding: 20px 0;
             text-align: center;
         }
 
-        /* Style for a specific row (optional) */
-        tr:nth-child(2) {
-            background-color: #e0f7fa;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
 
-        /* Style for specific columns */
-        td:first-child {
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
             font-weight: bold;
-            background-color: #e1bee7;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .team-member {
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+            position: relative;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px 10px 0 0;
+            float: left;
+        }
+
+        .bio {
+            padding: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Meet Our Awesome Team!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1 style="text-align: center;">My daily routine</h1>
+    <main>
+        <div class="team-member">
+            <img src="member1.jpg" alt="Team Member 1">
+            <div class="bio">
+                <h2>John Doe</h2>
+                <p>Hey! I'm John, your friendly software whiz. I love coding and creating cool apps. Let's build something amazing together!</p>
+            </div>
+        </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Time</th>
-                <th>Task</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>7:00 AM</td>
-                <td>Wake Up</td>
-            </tr>
-            <tr>
-                <td>7:30 AM</td>
-                <td>Breakfast - bread with egg</td>
-            </tr>
-            <tr>
-                <td>8:00 AM</td>
-                <td>Morning Exercise - school(Online)</td>
-            </tr>
-            <tr>
-                <td>9:00 AM</td>
-                <td>break or live call with teacher</td>
-            </tr>
-            <tr>
-                <td>11:00 AM</td>
-                <td>Work on Project - HTML and CSS Practice</td>
-            </tr>
-            <tr>
-                <td>1:00 PM</td>
-                <td>Lunch - there is always something different</td>
-            </tr>
-            <tr>
-                <td>3:00 PM</td>
-                <td>Review Code Documentation</td>
-            </tr>
-            <tr>
-                <td>6:00 PM</td>
-                <td>Dinner - Pasta</td>
-            </tr>
-            <tr>
-                <td>8:00 PM</td>
-                <td>Watch a Movie</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="team-member">
+            <img src="member2.jpg" alt="Team Member 2">
+            <div class="bio">
+                <h2>Jane Smith</h2>
+                <p>Hi there! I’m Jane, the project manager. I make sure everything runs smoothly. I'm super organized and love teamwork!</p>
+            </div>
+        </div>
 
+        <div class="team-member">
+            <img src="member3.jpg" alt="Team Member 3">
+            <div class="bio">
+                <h2>Mike Johnson</h2>
+                <p>Yo! I’m Mike, the graphic designer. I bring our ideas to life with awesome visuals. Let's make stuff look cool!</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="member4.jpg" alt="Team Member 4">
+            <div class="bio">
+                <h2>Emily Davis</h2>
+                <p>Hey! I'm Emily, the marketing guru. I love coming up with creative ways to share our projects. Let's spread the word!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Awesome Team. All rights reserved.</p>
+    </footer>
 </body>
 </html>
